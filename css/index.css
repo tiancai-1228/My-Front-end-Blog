@@ -4,3 +4,12 @@
     color: #000;
     border-radius: 10px;
 }
+img{
+    border-radius: 50%;
+}
+.contianer{
+    
+
+   clear: both;padding: 10px;padding-left: 100px;
+  
+}
