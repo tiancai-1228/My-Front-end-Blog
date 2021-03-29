@@ -1,0 +1,11 @@
+.button{
+    border: 0;
+    background-color: cyan;
+    color: #000;
+    border-radius: 10px;
+}
+
+.login{
+    text-align: center;
+    margin-top: 200px;
+}

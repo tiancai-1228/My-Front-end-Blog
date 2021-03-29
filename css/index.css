@@ -1,13 +1,3 @@
-.button{
-    border: 0;
-    background-color: cyan;
-    color: #000;
-    border-radius: 10px;
-}
-.login{
-    text-align: center;
-    margin-top: 200px;
-}
 img{
     border-radius: 50%;
 }
@@ -19,25 +9,42 @@ h1{
   position: relative;
   left: 20%;
   width: 750px;
+}
+.skills-box{
+    position: relative;
+    background-color: rgb(95, 95, 95);
+    width: 100%;
+    height: 200px;
+    text-align:center;
+    padding: 10px;
 
 }
 .skills{
-    background-color: rgb(95, 95, 95);
-    text-align:center;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: min-content;
+    height: auto;
+    border-left-style: solid  ;
+    border-left-color: rgb(124, 122, 122);
+    line-height: 1.5;
+   
 }
+.skills-2{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: min-content;
+    height: auto;
+    border-left-style: solid ;
+    border-left-color: rgb(124, 122, 122);
+    line-height: 1.5;
+  
+ }
 ul{
     list-style: none;
-    line-height: 30px;
  }
-.line-on{
-    position: relative;
-    left: 40%;
-    width: auto;
-    height: auto;
-    border-left-style: solid;
-    border-left-color: rgb(124, 122, 122);
-  
-}
+
 
 hr{
     margin-top: -1em;
