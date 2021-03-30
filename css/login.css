@@ -47,7 +47,7 @@ body {
     float: left;
     display: inline;
 }
- .bg{
+ .background{
     height: 400px;
     width: 770px; 
     background-image: url("https://www.w3schools.com/css/lights600x400.jpg");
