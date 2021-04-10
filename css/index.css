@@ -7,7 +7,8 @@ h1{
 
 .contianer{
   position: relative;
-  left: 20%;
+  margin-left: auto;
+  margin-right: auto;
   width: 750px;
 }
 .skills-box{
@@ -57,4 +58,14 @@ hr{
 }
 body { 
     margin: 0; padding: 0; height: 100%; border:none; 
+}
+a{
+    color: black;
+}
+a:hover{
+    color: red;
+   
+}
+.text{
+    text-align: center;
 }
