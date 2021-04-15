@@ -41,43 +41,60 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.warp{
-    margin: 0 auto;
-    width: 1024px;
+
+h2 {
+	font-size: 50px;
+    background-color: #37523d;
 }
-.header{
-    margin-bottom: 10px;
+
+h3 {
+	font-size: 26px;
+    color: #37523d;
+    font-weight: 600;
+}
+
+p {
+	font-size: 23px;
+	line-height: 1.5;
+}
+
+
+.wrap{
+    background-color: #37523d;
+ border: black solid 1px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.content{
+    background-color: #fff;
+    padding: 40px 33px 90px;
+}
+.content p{
+    margin-top: 20px;
+}
+.card{
+    width: 450px;
+}
+.title{
+    background-color: #eaf0ed;
+    color: #37523d;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .footer{
     background-color: gray;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-}
-.footer p{
-    font-size: 10px;
+    font-size: 30px;
 }
 .footer a{
-    font-size: 25px;
-   color: white;
+    color: black;
     text-decoration: none;
 }
 .footer a:hover{
-    color:rgb(78, 62, 62);
-}
-.conten{
-    margin-bottom: 10px;
-}
-.course{
-    display: flex;
-    justify-content: space-around;
-}
-.course h2{
-    text-align: center;
-    font-size: 25px;
-}
-.item{
-    border: black solid 1px;
-    width: 300px;
+    color: red;
 }
