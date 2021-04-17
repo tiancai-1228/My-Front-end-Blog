@@ -1,0 +1,107 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.warp{
+    margin: 0 auto;
+    width: 900px;
+    background-color: #37523d;
+    padding: 20px;
+}
+
+.card{
+background-color:white;
+border-radius: 10px;
+}
+.card-header{
+    background-color: #eaf0ed;;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-header img{
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.card-header a{
+    text-decoration: none;
+    color:#37523d ;
+    font-size: 24px;
+    margin-right: 50px;
+}
+.card-header a:hover{
+    color:#169933;
+}
+.content{
+    display: flex;
+    padding: 30px 80px;
+    
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   flex-direction: column;
+   padding-top: 30px;
+   margin-left: 30px;
+}
+.content-text h2{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 24px;
+    color:#37523d ;
+}
+.content-text p{
+    line-height: 23px;
+    font-weight: 400;
+}
+.content-text a{
+    text-decoration: none;
+    color:#37523d ;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.content-text a:hover{
+    background-color: rgb(175, 175, 202);
+}
