@@ -51,13 +51,16 @@ table {
     background-size: cover;
 }
 .header{
+    position: fixed;
     display: flex;
-    height: 50px;
+    width: 100%;
     justify-content: center;
-    align-items: center;
+    background-color: rgb(0, 0, 0,0.6);
 }
 .header a{
     color: white;
+    display: block;
+    padding: 20px 15px;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 18px;
@@ -132,7 +135,7 @@ table {
 .footer{
     text-align: center;
     background-color: gray;
-    padding: 30px;
+    padding: 10px;
     line-height: 2;
 }
 .footer a{
