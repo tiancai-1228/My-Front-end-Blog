@@ -1,71 +1,144 @@
-img{
-    border-radius: 50%;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-h1{
-    border-bottom-style: double;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.contianer{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
+
+
+
+.warp{
+    background: url(../images/index.jpg);
+    height: 100vh;
+    background-size: cover;
 }
-.skills-box{
-    position: relative;
-    background-color: rgb(95, 95, 95);
+.header{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.header a{
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.header a:hover{
+    opacity: 0.7;
+}
+.logo{
+    text-align: center;
+    padding: 200px;
+}
+.logo h1{
+    font-size: 82px;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.logo h2{
+    color: white;
+    font-size: 26px;
+    font-family: DFKai-sb;
+    margin-bottom: 10px;
+}
+
+
+.social{
+    padding: 5px;
+}
+.social a{
+    padding-left: 10px;
+}
+.social a :hover{
+    opacity: 0.7;
+}
+.social img{
+    width: 30px;
+}
+.Html-work{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.Html-work h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.Html-menu{
+    display: flex;
+    justify-content: center;
+
+}
+.Html-menu img{
+    height: 100%;
     width: 100%;
-    height: 200px;
-    text-align:center;
-    padding: 10px;
-
+    border-radius: 10% 10% 0% 0%;
 }
-.skills-1{
-    position: absolute;
-    top: 35%;
-    left: 20%;
-    width: min-content;
-    height: auto;
-    border-left-style: solid  ;
-    border-left-color: rgb(124, 122, 122);
-    line-height: 1.5;
-   
+.Html-menu a{
+    border: black 1px solid;
+    border-radius: 10%;
+    display: block;
+    width: 200px;
+    padding-bottom: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
-.skills-2{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: min-content;
-    height: auto;
-    border-left-style: solid ;
-    border-left-color: rgb(124, 122, 122);
-    line-height: 1.5;
-  
- }
-ul{
-    list-style: none;
- }
-
-
-hr{
-    margin-top: -1em;
+.Html-menu a:hover{
+    opacity: 0.7;
 }
-.buttom{
-   position: relative;
-   height: 100px;
-   background-size: cover;
-   background-color:rgb(95, 95, 95) ;
+.footer{
+    text-align: center;
+    background-color: gray;
+    padding: 30px;
+    line-height: 2;
 }
-body { 
-    margin: 0; padding: 0; height: 100%; border:none; 
-}
-a{
+.footer a{
+    text-decoration: none;
     color: black;
 }
-a:hover{
-    color: red;
-   
-}
-.text{
-    text-align: center;
+.footer a:hover{
+    color: rgb(77, 76, 76);
 }
