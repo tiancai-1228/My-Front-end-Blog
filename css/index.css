@@ -51,24 +51,24 @@ table {
     background-size: cover;
 }
 .header{
+    width: 100%;
     position: fixed;
     display: flex;
-    width: 100%;
     justify-content: center;
     background-color: rgb(0, 0, 0,0.6);
+    z-index: 999;
 }
 .header a{
     color: white;
     display: block;
     padding: 20px 15px;
-    margin-left: 20px;
-    margin-right: 20px;
     font-size: 18px;
     text-decoration: none;
 }
 .header a:hover{
     opacity: 0.7;
 }
+
 .logo{
     text-align: center;
     padding: 200px;
@@ -77,7 +77,6 @@ table {
     font-size: 82px;
     color:white;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 .logo h2{
     color: white;
@@ -89,6 +88,7 @@ table {
 
 .social{
     padding: 5px;
+    
 }
 .social a{
     padding-left: 10px;
@@ -100,7 +100,10 @@ table {
     width: 30px;
 }
 .work{
-    width: 950px;
+    position: relative;
+    z-index: 555;
+    background-color: white;
+    width: 80%;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 60px;
@@ -113,6 +116,7 @@ table {
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
 }
@@ -140,6 +144,7 @@ table {
     background-color: gray;
     padding: 10px;
     line-height: 2;
+    margin-top: 10px;
 }
 .footer a{
     text-decoration: none;
@@ -147,4 +152,23 @@ table {
 }
 .footer a:hover{
     color: rgb(77, 76, 76);
+}
+
+@media(max-width:768px){
+    .logo{
+        text-align: center;
+        padding: 100px;
+    }
+    .logo h1{
+        font-size: 64px;
+        color:white;
+        font-weight: 600;
+        
+    }
+    .logo h2{
+        color: white;
+        font-size: 18px;
+        font-family: DFKai-sb;
+    }
+
 }
