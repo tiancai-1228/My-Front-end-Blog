@@ -48,7 +48,11 @@ table {
 .warp{
     background: url(../images/index.jpg);
     height: 100vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
     background-size: cover;
+    align-items: center;
 }
 .header{
     width: 100%;
@@ -70,8 +74,7 @@ table {
 }
 
 .logo{
-    text-align: center;
-    padding: 200px;
+    width: 100%;
 }
 .logo h1{
     font-size: 82px;
@@ -156,8 +159,7 @@ table {
 
 @media(max-width:768px){
     .logo{
-        text-align: center;
-        padding: 100px;
+        width: 100%;
     }
     .logo h1{
         font-size: 64px;
