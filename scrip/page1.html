@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .warp{
+            width: 950px;
+            margin: 0 auto;
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+        li{
+            list-style: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        a{
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: gray;
+            padding: 5px;
+            border-radius: 15%;
+        }
+        .lists{
+            width: 300px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <h1>localStorage</h1>
+        <input type="text" class="textclass">
+        <input type="button" class="btnclass" value="確認">
+        <ul class="lists"></ul>
+        <a href="../index.html">back My Blog</a>
+        
+    </div> 
+    <script>
+        var lists =document.querySelector('.lists'); 
+        var texts =document.querySelector('.textclass');
+        var btn = document.querySelector('.btnclass');
+        var getdata=JSON.parse(localStorage.getItem('myvalue')) || [];
+
+        function updata(){ 
+            var str='';
+            for(var i =0 ;i<getdata.length ;i++){
+                str+='<li><a href="#" class"del"  data-num="'+i+'">刪除</a>'+getdata[i].name+'</a></li>'
+            }
+            lists.innerHTML= str ;   
+        }
+        updata();
+        
+        btn.addEventListener('click',function(e){
+            e.preventDefault;
+            var str =texts.value;
+            if(str ==''){return};
+            getdata.push({ name: str});
+            var values = JSON.stringify(getdata);
+            localStorage.setItem('myvalue',values);
+            updata();
+        })
+
+        lists.addEventListener('click',function(e){
+            if(e.target.tagName !=='A'){return};
+            var num =e.target.dataset.num;
+            getdata.splice(num,1);
+            var values = JSON.stringify(getdata);
+            localStorage.setItem('myvalue',values);
+            updata();
+        })
+
+    </script> 
+</body>
+</html>

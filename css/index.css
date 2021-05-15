@@ -99,26 +99,29 @@ table {
 .social img{
     width: 30px;
 }
-.Html-work{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.work{
+    width: 950px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
     text-align: center;
+    border-bottom: 1px solid gray;
 }
-.Html-work h2{
+.title{
     font-size: 36px;
     font-weight: 600;
 }
-.Html-menu{
+.menu{
     display: flex;
     justify-content: center;
 
 }
-.Html-menu img{
+.menu img{
     height: 100%;
     width: 100%;
     border-radius: 10% 10% 0% 0%;
 }
-.Html-menu a{
+.menu a{
     border: black 1px solid;
     border-radius: 10%;
     display: block;
@@ -129,7 +132,7 @@ table {
     color: black;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
-.Html-menu a:hover{
+.menu a:hover{
     opacity: 0.7;
 }
 .footer{
