@@ -158,6 +158,15 @@ table {
 }
 
 @media(max-width:768px){
+    .warp{
+        background: url(../images/index2.jpg);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        background-size: cover;
+        align-items: center;
+    }
     .header{
         position: fixed;
         display: flex;
@@ -186,7 +195,7 @@ table {
     }
     .logo h1{
         font-size: 64px;
-        color:gray;
+        color:white;
         font-weight: 600;
         
     }
@@ -195,5 +204,6 @@ table {
         font-size: 18px;
         font-family: DFKai-sb;
     }
+
 
 }
