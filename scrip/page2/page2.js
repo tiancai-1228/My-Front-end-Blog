@@ -32,7 +32,7 @@ function loaddata(local){
     title.innerHTML=local;
     for(var i=0;i<data.length;i++){
         if(data[i].Zone == local){
-             str+='<li class="card"><div class="card-header"><img src="'+data[i].Picture1+'" alt=""><ul><li><h2>'+data[i].Name+'</h2></li><li>'+data[i].Zone+'</li> </ul></div><ul class="card-body"><li class="time"><img src="scrip-img/icons_clock.png" alt="">'+data[i].Opentime+'</li><li class="local"><img src="scrip-img/icons_pin.png" alt="">'+data[i].Add+'</li><li class="phon"><img src="scrip-img/icons_phone.png" alt="">'+data[i].Tel+'</li><div class="ticket"><img src="scrip-img/icons_tag.png" alt="">'+data[i].Ticketinfo+'</div></ul></li>'
+             str+='<li class="card"><div class="card-header"><img src="'+data[i].Picture1+'" alt=""><ul><li><h2>'+data[i].Name+'</h2></li><li>'+data[i].Zone+'</li> </ul></div><ul class="card-body"><li class="time"><img src="img/icons_clock.png" alt="">'+data[i].Opentime+'</li><li class="local"><img src="img/icons_pin.png" alt="">'+data[i].Add+'</li><li class="phon"><img src="img/icons_phone.png" alt="">'+data[i].Tel+'</li><div class="ticket"><img src="img/icons_tag.png" alt="">'+data[i].Ticketinfo+'</div></ul></li>'
         }
     }
     list.innerHTML=str;

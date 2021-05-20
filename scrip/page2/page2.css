@@ -44,7 +44,7 @@ table {
 
 
 .header{
-    background: url(../scrip-img/Hero.png);
+    background: url(img/Hero.png);
     height: 380px;
     background-size: cover;
     position: relative;
@@ -118,7 +118,7 @@ hr{
 .dashed-img{
     width: 24px;
     height: 24px;
-    background-image: url(../scrip-img/icon_godown.png);
+    background-image: url(img/icon_godown.png);
     background-size: cover;
     margin: -11px auto;
     margin-bottom: 10px;
