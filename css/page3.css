@@ -88,12 +88,12 @@ table {
 }
 .banner{
     width: 950px;
-    height: 470px;
+    height: 400px;
     position: relative;
-    background-image: url(../images/index.jpg);
-    background-size: cover;
+    background-image: url(../images/banner.png);
     margin: 0 auto;
     border-top: gray 1px solid;
+    background-size: cover;
 }
 .banner a{
     display: block;
