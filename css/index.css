@@ -102,55 +102,110 @@ table {
 .social img{
     width: 30px;
 }
-.work{
-    position: relative;
-    z-index: 555;
-    background-color: white;
-    width: 100%;
+.content{
+    width: 80%;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 60px;
     text-align: center;
+}
+.content h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.work{
+    padding-bottom: 20px;
+    border: 1px gray solid;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 1px 2px gray;
 }
 .title{
     font-size: 36px;
     font-weight: 600;
+    width: 200px;
+    /* border: black 1px solid; */
 }
 .menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     padding-right: 30px;
-    padding-left: 100px;
+    padding-left: 30px;
 
 }
-.menu img{
-    height: 150px;
-    width: 100%;
-    border-radius: 10% 10% 0% 0%;
-    margin-bottom: 3px;
-}
+
 .menu a{
+    position: relative;
     border: black 1px solid;
-    border-radius: 10%;
+    background-color: rgba(235, 232, 232);
     display: block;
     width: 200px;
-    height: 180px;
+    height: 220px;
     margin: 10px;
-    background-color: rgb(216, 211, 211);
     text-decoration: none;
     color: black;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
-.menu a:hover{
-    
-    padding: 5px;
+.menu img{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 3px;
+}
+.worktitle{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+.worktitle::before {
+    content: "";
+    background: rgb(88, 88, 88);
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 2px;
+    width: 0%;
+    transition: 0.5s;
+  }
+
+
+.workcontent{
+    position: absolute;
+    width: 80%;
+    text-align: left;
+    top: 150px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.menu a:hover { 
     box-shadow: 15px 15px 30px  gray;
+}
+.menu a:hover .worktitle::before{
+    transition: .6;
+    width: 60%;
+}
+
+.js30{
+    font-weight: 600;
+    color: rgb(252, 0, 0);
 }
 #JavaScrip{
     background: url(../images/bg2.jpg);
-    background-size: cover;
-    
+    background-size: cover; 
+}
+#Html{
+    background: url(../images/bg2.jpg);
+    background-size: cover; 
+
 }
 .footer{
     text-align: center;
