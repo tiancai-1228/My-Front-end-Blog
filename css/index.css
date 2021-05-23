@@ -143,7 +143,7 @@ table {
     background-color: rgba(235, 232, 232);
     display: block;
     width: 200px;
-    height: 220px;
+    height: 250px;
     margin: 10px;
     text-decoration: none;
     color: black;
@@ -151,7 +151,7 @@ table {
 }
 .menu img{
     position: absolute;
-    height: 100px;
+    height: 120px;
     width: 100%;
     top: 0;
     left: 0;
@@ -160,7 +160,7 @@ table {
 .worktitle{
     position: absolute;
     width: 100%;
-    top: 110px;
+    top: 130px;
     font-weight: 600;
     font-size: 24px;
     padding-bottom: 5px;
@@ -181,7 +181,7 @@ table {
     position: absolute;
     width: 80%;
     text-align: left;
-    top: 150px;
+    top: 170px;
     font-size: 14px;
     padding-left: 5px;
 }
