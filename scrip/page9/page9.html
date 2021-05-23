@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="page9.css">
+</head>
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <li>Filter for a city</li>
+      <li>or a state</li>
+    </ul>
+  </form>
+<script>
+const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+let cities = [];          
+fetch(endpoint)
+  .then(res => res.json())
+  .then(data => (cities = data));
+  //利用fetch取的資料推進cities
+
+let search =document.querySelector('.search');
+let suggest=document.querySelector('.suggestions');
+
+function findMatches(wordToMatch, cities) {
+  return cities.filter(place => {
+    // here we need to figure out if the city or state matches what was searched
+    const regex = new RegExp(wordToMatch, 'gi');
+    return place.city.match(regex) || place.state.match(regex) // city 或 state有符合的
+  });
+}
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');  //正規表達式 每隔3個數字一個 ',' 
+  //(?=(\d{3})+(?!\d)) 從字串結尾開始, 在每三個數字一組的左側位置, \B 是在數字與數字間的位置
+}
+
+function displayMatches(){
+  const matchArray = findMatches(this.value, cities); //找到符合輸入的資料
+  const html = matchArray.map(place => {              //將符合的資料推進陣列
+    const regex = new RegExp(this.value, 'gi');    //g 全搜索 i不管大小寫
+    const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
+    const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`); //將符合的關鍵字換顏色
+    return `
+      <li>
+        <span class="name">${cityName}, ${stateName}</span>
+        <span class="population">${numberWithCommas(place.population)}</span>
+      </li>
+    `;
+  }).join('');        //轉成字串
+  suggest.innerHTML = html;   //將資料顯示在畫面上
+}
+
+search.addEventListener('keyup',displayMatches);
+
+</script>
+</body>
+</html>
