@@ -117,8 +117,8 @@ table {
     padding-bottom: 20px;
     border: 1px gray solid;
     margin-top: 1px;
-    margin-bottom: 10px;
-    margin-left: 5px;
+    margin-bottom: 50px;
+    margin-left: 10px;
     border-radius: 5px;
     box-shadow: 3px 1px 2px gray;
 }
@@ -133,7 +133,7 @@ table {
     flex-wrap: wrap;
     justify-content: left;
     padding-right: 30px;
-    padding-left: 30px;
+    padding-left: 40px;
 
 }
 
