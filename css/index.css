@@ -105,8 +105,11 @@ table {
 .content{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
-
+*,*::before,*::after{
+    box-sizing: border-box;
+}
 .work-item{
     width: 75%;
 }
@@ -128,7 +131,6 @@ h2{
 
 }
 .side-project{
-    width: 20%;
     height: 1000px;
     border: 1px gray solid;
     border-radius: 5px;
@@ -286,6 +288,23 @@ h2{
         color: white;
         font-size: 18px;
         font-family: DFKai-sb;
+    }
+    .content{
+        display: inline;
+        justify-content: space-around;
+    }
+    .work-item{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .side-project{
+        width: 60%;
+        margin: 0 auto;
+        height: 500px;
+        border: 1px gray solid;
+        border-radius: 5px;
+        box-shadow: 3px 1px 2px gray;
+        margin-bottom: 30px;
     }
 
 
