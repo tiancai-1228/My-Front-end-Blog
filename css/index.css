@@ -148,7 +148,6 @@ h2{
     justify-content: left;
     padding-right: 20px;
     padding-left: 30px;
-
 }
 
 .menu a{
@@ -156,9 +155,9 @@ h2{
     border: black 1px solid;
     background-color: rgba(235, 232, 232);
     display: block;
-    width: 200px;
+    width: 230px;
     height: 300px;
-    margin: 10px;
+    margin: 10px 20px;
     text-decoration: none;
     color: black;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -198,7 +197,7 @@ h2{
     text-align: left;
     top: 170px;
     font-size: 14px;
-    padding-left: 5px;
+    padding:0px 10px;
     line-height: 1.5;
 }
 
@@ -291,20 +290,31 @@ h2{
     }
     .content{
         display: inline;
-        justify-content: space-around;
     }
     .work-item{
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
     }
     .side-project{
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         height: 500px;
         border: 1px gray solid;
         border-radius: 5px;
         box-shadow: 3px 1px 2px gray;
         margin-bottom: 30px;
+    }
+    .menu a{
+        position: relative;
+        border: black 1px solid;
+        background-color: rgba(235, 232, 232);
+        display: block;
+        width: 230px;
+        height: 300px;
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     }
 
 
