@@ -118,6 +118,46 @@ table {
     border-radius: 10px 10px 0px 0px ;
     filter: blur(8px);
 }
+.item{
+    width: 70%;
+    height: 80px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px  gray;
+}
+.item h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.item p{
+    font-size: 26px;
+    font-weight: 600;
+}
+.back{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.back a{
+    display: block;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(167, 236, 238);
+    transition: 0.3s;
+    border: black 1px solid;
+    box-sizing: border-box;
+}
+.back a:hover{
+    box-shadow: 3px 3px 10px black;
+}
 .footer{
     box-sizing: border-box;
     width: 100%;
