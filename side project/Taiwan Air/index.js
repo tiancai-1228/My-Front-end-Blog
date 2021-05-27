@@ -1,5 +1,6 @@
-var xhr =new XMLHttpRequest();
-xhr.open('get','https://data.epa.gov.tw/api/v1/aqx_p_432?format=json&limit=83&api_key=5e2fadc0-a851-4935-b1ec-161d08d5eb59',true);
+;(function(){
+    var xhr =new XMLHttpRequest();
+xhr.open('get','https://data.epa.gov.tw/api/v1/aqx_p_432?format=json&limit=84&api_key=5e2fadc0-a851-4935-b1ec-161d08d5eb59',true);
 xhr.send(null);
 const list =document.querySelector('.list')
 const title=document.querySelector('.title')
@@ -90,13 +91,5 @@ xhr.onload=function(){
     console.log(title)
     updata(country)
 }
-
-// cards.forEach(card =>{
-//     // changepage(btn.value);
-//     this.addEventListener('click',function(){
-       
-//     })
-// })
-// console.log(cards)
-
+})()
 
