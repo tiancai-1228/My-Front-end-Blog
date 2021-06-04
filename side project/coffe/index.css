@@ -55,6 +55,7 @@ table {
     z-index: 999;
     /* border: 1px rgb(255, 136, 0) solid; */
     border-bottom: 1px solid rgb(219, 219, 219);
+    box-sizing: border-box;
 }
 .logo{
     padding: 20px 0px;
@@ -115,7 +116,7 @@ table {
     background: url(img/banner.jpg);
     background-size: cover;
     font-size: 90px;
-    color: rgb(109, 62, 23);
+    color: rgb(223, 107, 13);
     margin: 130px auto 50px auto;
 
 }
@@ -171,10 +172,12 @@ table {
 }
 
 .footer{
+    width: 100%;
     text-align: center;
     background-color: rgb(173, 151, 122);
     padding: 50px;
     line-height: 2;
+    box-sizing: border-box;
 }
 .footer a{
     text-decoration: none;
@@ -207,7 +210,7 @@ table {
     }
     .banner{
         height: 300px; 
-        font-size: 30px;
+        font-size: 60px;
     }
     .menu a{
         font-size: 16px;
@@ -230,7 +233,7 @@ table {
 }
 @media(max-width:768px){
     .logo a{
-        font-size: 30px;
+        font-size: 50px;
     }
     .social img{
         width: 25px;
@@ -261,6 +264,20 @@ table {
 }
 
 @media(max-width:576px){
+    .header{
+        display: flex;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 999;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        box-sizing: border-box;
+   
+    }
     .logo a{
         font-size: 30px;
     }
@@ -268,18 +285,21 @@ table {
         display: block;
         width: 20px;
         margin: 5px 0px;
+
     }
     .banner{
         height: 200px; 
-        font-size: 20px;
+        font-size: 40px;
     }
+    
     .menu a{
         font-size: 14px;
-        padding:10px 15px;
+        padding:10px 5px;
     }
     .content{
-        width: 450px;
+        width: 350px;
         margin: auto;
+        box-sizing: border-box;
     }
     .txt{
         padding: 30px  0px;
@@ -291,6 +311,10 @@ table {
     .txt p{
         font-size: 12px;
     }
+    .footer {
+       width: 100%;
+    }
+   
     .footer .social{
         display: flex;
         justify-content: center;
