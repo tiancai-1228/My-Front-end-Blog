@@ -207,6 +207,7 @@ table {
     }
     .banner{
         height: 300px; 
+        font-size: 30px;
     }
     .menu a{
         font-size: 16px;
@@ -236,6 +237,7 @@ table {
     }
     .banner{
         height: 200px; 
+        font-size: 30px;
     }
     .menu a{
         font-size: 16px;
@@ -269,6 +271,7 @@ table {
     }
     .banner{
         height: 200px; 
+        font-size: 30px;
     }
     .menu a{
         font-size: 14px;
