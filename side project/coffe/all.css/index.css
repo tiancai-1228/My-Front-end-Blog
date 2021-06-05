@@ -113,7 +113,7 @@ table {
     align-items: center;
     height: 400px;
     width:80%;
-    background: url(img/banner.jpg);
+    background: url(../img/banner.jpg);
     background-size: cover;
     font-size: 90px;
     color: rgb(223, 107, 13);
