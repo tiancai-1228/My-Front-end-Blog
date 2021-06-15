@@ -8,50 +8,53 @@
     <link rel="stylesheet" href="all.css/member.css">
 </head>
 <body>
-    <div class="header">
-        <div class="header-item">
-            <div class="logo"><a href="index.html">coffee!</a></div>
-            <div class="menu">
-                <a href="index.html">首頁</a>
-                <a href="product.html">產品列表</a>
-                <a href="member.html">會員中心</a>
+    <div class="memberALL">
+        <div class="header">
+            <div class="header-item">
+                <div class="logo"><a href="index.html">{{logo}}!</a></div>
+                <div class="menu">
+                    <a :href="pageLink.index">{{menu[0]}}</a>
+                    <a :href="pageLink.product">{{menu[1]}}</a>
+                    <a :href="pageLink.member">{{menu[2]}}</a>
+                </div>
+            </div>
+            <div class="social">
+                <a :href="socialLink.fb" ><img src="img/fb.png" alt="facebook"></a>
+                <a :href="socialLink.ig" ><img src="img/ig.png" alt="instagram"></a>
+                <a :href="socialLink.github" ><img src="img/github.png" alt="github"></a>
             </div>
         </div>
-        <div class="social">
-            <a href="https://facebook.com/tiancai1228" class="fb"><img src="img/fb.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/tiancai_1228" class="ig"><img src="img/ig.png" alt="instagram"></a>
-            <a href="https://github.com/tiancai-1228" class="fb"><img src="img/github.png" alt="github"></a>
+    
+        <div class="content">
+            <div class="log-reg">
+                <a href="#" class="log" @click.prevent="golog"  v-bind:style = "{ color: log.color}">{{log.title}}</a>
+                <a href="#" class="reg" @click.prevent="goreg"  v-bind:style = "{ color: reg.color}">{{reg.title}}</a>
+            </div>
+            <form :class="log.class" v-show="log.type">
+                <input type="text" placeholder="請輸入帳號">
+                <input type="text" placeholder="請輸入密碼">
+                <a href="#" class="submit">會員帳號登入</a>
+            </form>
+            <form :class="reg.class"  v-show="reg.type">
+                <input type="text" placeholder="請輸入要註冊的帳號">
+                <input type="text" placeholder="請輸入要註冊的密碼">
+                <a href="#" class="submit">確定</a>
+            </form>
         </div>
+    
+    
+        <ul class="footer">
+            <li class="social">
+                <a :href="socialLink.fb" ><img src="img/fb.png" alt="facebook"></a>
+                <a :href="socialLink.ig" ><img src="img/ig.png" alt="instagram"></a>
+                <a :href="socialLink.github" ><img src="img/github.png" alt="github"></a>
+            </li>
+            <li>聯繫我：<a :href="'mailto:'+email"> {{email}}</a></li>
+        </ul>
+    
     </div>
-
-    <div class="content">
-        <div class="log-reg">
-            <a href="#" class="log">會員登入</a>
-            <a href="#" class="reg">會員註冊</a>
-        </div>
-        <form class="log-content">
-            <input type="text" placeholder="請輸入帳號">
-            <input type="text" placeholder="請輸入密碼">
-            <a href="#" class="submit">會員帳號登入</a>
-        </form>
-        <form class="reg-content">
-            <input type="text" placeholder="請輸入要註冊的帳號">
-            <input type="text" placeholder="請輸入要註冊的密碼">
-            <a href="#" class="submit">確定</a>
-        </form>
-    </div>
-
-
-    <ul class="footer">
-        <li class="social">
-            <a href="https://facebook.com/tiancai1228" class="fb"><img src="img/fb.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/tiancai_1228" class="ig"><img src="img/ig.png" alt="instagram"></a>
-            <a href="https://github.com/tiancai-1228" class="fb"><img src="img/github.png" alt="github"></a>
-        </li>
-        <li>聯繫我：<a href="mailto:sky0975657713@gmail.com"> sky0975657713@gmail.com</a></li>
-    </ul>
-
-    <script src="all.js/member.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        <script src="all.js/member.js"></script>
     
 </body>
 </html>

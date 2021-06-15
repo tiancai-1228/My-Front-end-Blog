@@ -158,8 +158,8 @@ table {
 .reg-content{
     width: 40%;
     margin: 40px auto 80px auto;
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     flex-direction: column;
     align-self: center;
     /* border: solid 1px black; */
@@ -201,4 +201,65 @@ table {
 }
 .footer a:hover{
     color: rgb(77, 76, 76);
+}
+@media(max-width:992px){
+    .logo a{
+        font-size: 30px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+}
+@media(max-width:768px){
+    .logo a{
+        font-size: 50px;
+    }
+    .social img{
+        width: 25px;
+    }
+    .menu a{
+        font-size: 16px;
+        padding:10px 10px;
+    }
+}
+
+@media(max-width:576px){
+    .header{
+        display: flex;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 999;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        box-sizing: border-box;
+   
+    }
+    .logo a{
+        font-size: 30px;
+    }
+    .social img{
+        display: block;
+        width: 20px;
+        margin: 5px 0px;
+
+    }
+    .menu a{
+        font-size: 14px;
+        padding:10px 5px;
+    }
+    .footer {
+       width: 100%;
+    }
+   
+    .footer .social{
+        display: flex;
+        justify-content: center;
+    }
+    .footer .social a{
+        margin: 10px;
+    }
 }
