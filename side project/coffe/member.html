@@ -30,15 +30,19 @@
                 <a href="#" class="log" @click.prevent="golog"  v-bind:style = "{ color: log.color}">{{log.title}}</a>
                 <a href="#" class="reg" @click.prevent="goreg"  v-bind:style = "{ color: reg.color}">{{reg.title}}</a>
             </div>
-            <form :class="log.class" v-show="log.type">
-                <input type="text" placeholder="請輸入帳號">
-                <input type="text" placeholder="請輸入密碼">
-                <a href="#" class="submit">會員帳號登入</a>
+            <form :class="log.class" v-show="log.type" action="#">
+                <input type="text" placeholder="請輸入帳號" name="account"v-model='account'>
+                <h4 v-show='log.Noaccount'>請輸入帳號</h4>
+                <input type="text" placeholder="請輸入密碼" name="password"v-model='password'>
+                <h4 v-show='log.Nopassword'>請輸入密碼</h4>
+                <button type="submit"  class="submit" @click='logcheck'>會員帳號登入</button>
             </form>
             <form :class="reg.class"  v-show="reg.type">
-                <input type="text" placeholder="請輸入要註冊的帳號">
-                <input type="text" placeholder="請輸入要註冊的密碼">
-                <a href="#" class="submit">確定</a>
+                <input type="text" placeholder="請輸入要註冊的帳號" name="Newaccount" v-model='Newaccount'>
+                <h4 v-show='reg.Noaccount'>請輸入註冊帳號</h4>
+                <input type="text" placeholder="請輸入要註冊的密碼" name="Newpassword" v-model='Newpassword'>
+                <h4 v-show='reg.Nopassword'>請輸入註冊密碼</h4>
+                <button type="submit"  class="submit" @click='regcheck'>確定</button>
             </form>
         </div>
     
